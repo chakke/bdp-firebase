@@ -19,7 +19,9 @@ export class League extends FirebaseObject {
     /**Ngày kết thúc */
     time_end: number;
     /**Ảnh backdrop của giải, tương đương với cover trong profile */
-    backdrop: string;
+    cover: string;
+    /**Logo của giải */
+    logo: string;
     /**Slogan của giải */
     slogan: string;
     /**Mô tả của giải */
