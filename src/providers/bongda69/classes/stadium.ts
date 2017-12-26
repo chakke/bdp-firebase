@@ -3,7 +3,11 @@ import { FirebaseEnum } from "../../firebase/classes/firebase-enum";
 
 import { FirebaseObject } from "../../firebase/classes/firebase-object";
 
-
+export class StadiumType {
+    id: number;
+    name: string;
+    quantity: number;
+}
 export class Stadium extends FirebaseObject {
     /**id của Sân */
     id: string;
@@ -29,12 +33,12 @@ export class Stadium extends FirebaseObject {
     lat: number;
     /**Tọa độ lng của sân */
     lng: number;
-    /**số lượng sân */
-    number_stadiums: number;
     /**id của bản đồ sân */
     map_id: string;
     /**Đường dây nóng */
     hotlines: Array<string>;
-    /**Loại sân, xem thêm statium_types */
-    types: Array<number>;
+    /**Loại sân */
+    types: Array<StadiumType>;
+    /**Loại sân chính */
+    stadium_type : StadiumType;
 }
