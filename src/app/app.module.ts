@@ -8,6 +8,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AngularFireModule } from 'angularfire2';
 import { HttpClientModule } from '@angular/common/http';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 var firebaseConfig = {
   apiKey: "AIzaSyCCHTqgkVOX5e8TS_-0Ez6ZBY0RGr4fzhw",
@@ -27,7 +28,8 @@ var firebaseConfig = {
     BrowserModule,
     HttpClientModule,
     IonicModule.forRoot(MyApp),
-    AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFirestoreModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

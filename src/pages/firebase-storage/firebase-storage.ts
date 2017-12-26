@@ -8,6 +8,7 @@ import { ViewController } from 'ionic-angular/navigation/view-controller';
 import { FirebaseFolder } from '../../providers/firebase/classes/firebase-folder';
 import { FirebaseFile } from '../../providers/firebase/classes/firebase-file';
 import { FirebaseUpload } from '../../providers/firebase/classes/firebase-upload';
+import { HomePage } from '../home/home';
 
 class FirebaseFilePicker extends FirebaseFile {
   is_image?: boolean;
@@ -294,7 +295,7 @@ export class FirebaseStoragePage {
     if (this.navCtrl.getViews().length > 1) {
       this.navCtrl.pop();
     } else {
-      this.navCtrl.setRoot("HomePage");
+      this.navCtrl.setRoot(HomePage);
     }
   }
 

@@ -17,10 +17,14 @@ export class Stadium extends FirebaseObject {
     description: string;
     /**Địa chỉ sân */
     address: string;
-    /**Tỉnh thành */
-    province: string;
-    /**Quận huyện */
-    district: string;
+    /**Mã code của tỉnh thành */
+    province_id: string;
+    /**Tên tỉnh thành */
+    province_name: string;
+    /**Mã code Quận huyện */
+    district_id: string;
+    /**Tên của quận huyện */
+    district_name: string;
     /**Tọa độ lat của sân */
     lat: number;
     /**Tọa độ lng của sân */
