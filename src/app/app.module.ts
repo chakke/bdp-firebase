@@ -9,6 +9,9 @@ import { HomePage } from '../pages/home/home';
 import { AngularFireModule } from 'angularfire2';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { BongDa69Module } from '../providers/bongda69/bongda69';
+import { Http } from '@angular/http';
+import { HttpModule } from '@angular/http';
 
 var firebaseConfig = {
   apiKey: "AIzaSyCCHTqgkVOX5e8TS_-0Ez6ZBY0RGr4fzhw",
@@ -27,6 +30,7 @@ var firebaseConfig = {
   imports: [
     BrowserModule,
     HttpClientModule,
+    HttpModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule
@@ -39,6 +43,7 @@ var firebaseConfig = {
   providers: [
     StatusBar,
     SplashScreen,
+    BongDa69Module,    
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
 })
